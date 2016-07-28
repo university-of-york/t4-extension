@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "TERMINALFOUR utilities",
+  "description": "This extension adds some much needed functionality to TERMINALFOUR",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://cmstest.york.ac.uk/*", "https://cms.york.ac.uk/*"],
+      "js": ["js/buttons.js"]
+    },
+    {
+      "matches": ["https://cmstest.york.ac.uk/*", "https://cms.york.ac.uk/*"],
+      "js": ["js/trigger.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
