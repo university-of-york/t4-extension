@@ -2,15 +2,32 @@
   "manifest_version": 2,
   "name": "TERMINALFOUR utilities",
   "description": "This extension adds some much needed functionality to TERMINALFOUR",
-  "version": "1.0",
+  "version": "1.0.2",
+  "web_accessible_resources": [
+    "img/*",
+    "css/*",
+    "data/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://cmstest.york.ac.uk/*", "https://cms.york.ac.uk/*"],
-      "js": ["js/buttons.js"]
+      "matches": ["https://cmstest.york.ac.uk/*"],
+      "css": ["css/cmstest.css"]
     },
     {
       "matches": ["https://cmstest.york.ac.uk/*", "https://cms.york.ac.uk/*"],
       "js": ["js/trigger.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://cms.york.ac.uk/terminalfour/SiteManager?ctfn=recycle", "https://cmstest.york.ac.uk/terminalfour/SiteManager?ctfn=recycle"],
+      "js": ["js/recycle.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://cmstest.york.ac.uk/terminalfour/SiteManager?ctfn=user*", "https://cms.york.ac.uk/terminalfour/SiteManager?ctfn=user*"],
+      "js": ["js/filter-users.js"],
       "run_at": "document_start",
       "all_frames": true
     }

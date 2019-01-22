@@ -1,0 +1,48 @@
+/*
+ * OVERRIDE STYLES FOR CMSTEST
+ * Use double classes for higher specificity, instead of !important
+ */
+
+body.inner.inner {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/bg.headshade-blue.png');
+  -moz-background-image: url('moz-extension://__MSG_@@extension_id__/img/bg.headshade-blue.png');
+}
+.head-tools.head-tools {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/bg.header.tools-blue.png');
+  -moz-background-image: url('moz-extension://__MSG_@@extension_id__/img/bg.header.tools-blue.png');
+}
+body.inner.inner button {
+  border: 1px solid #008ced;
+  background: #2cb0fe;
+}
+ul.tab-button-dd-menu.tab-button-dd-menu {
+  border: 1px solid #008ced;
+  background: #2cb0fe;
+  background-image:none !important;
+}
+ul.tab-button-dd-menu.tab-button-dd-menu li ul.tab-button-dd-submenu {
+  border: 1px solid #008ced;
+  background: #2cb0fe;
+}
+ul.tab-button-dd-menu.tab-button-dd-menu li ul.tab-button-dd-submenu li {
+  border-top-color:#008ced;
+}
+ul.tab-button-dd-menu.tab-button-dd-menu li ul.tab-button-dd-submenu li:first-child {
+  border-top-width:0;
+}
+.head-tools ul li.end.end {
+  background-image:none;
+}
+#main .main-topClear.main-topClear {
+  background-image:none;
+  border-top-left-radius: 6px;
+}
+#main#main {
+  border-top-left-radius: 6px;
+}
+.mm li.start.start {
+  background-image: none;
+}
+.mm li.end.end {
+  background-image: none;
+}

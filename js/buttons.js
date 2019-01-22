@@ -1,6 +1,6 @@
 (function () {
 
-  // name for iframe
+  // get random name for iframe
   var id = setTimeout(function(){});
   var iframeName = 'save-frame-'+id;
 
