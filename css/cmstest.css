@@ -11,6 +11,14 @@ body.inner.inner {
   background-image: url('chrome-extension://__MSG_@@extension_id__/img/bg.header.tools-blue.png');
   -moz-background-image: url('moz-extension://__MSG_@@extension_id__/img/bg.header.tools-blue.png');
 }
+#login-mainForm#login-mainForm {
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/login.background.formbox-blue.png');
+  -moz-background-image: url('moz-extension://__MSG_@@extension_id__/img/login.background.formbox-blue.png');
+}
+#login-mainForm#login-mainForm button {
+  height:31px;
+  line-height:22px;
+}
 body.inner.inner button {
   border: 1px solid #008ced;
   background: #2cb0fe;
