@@ -2,7 +2,9 @@
 
   // Add autocomplete to password input on login page
   let loginInput = document.getElementById('login-password');
-  loginInput.setAttribute('autocomplete', 'current-password');
+  if (loginInput !== null) {
+    loginInput.setAttribute('autocomplete', 'current-password');
+  }
 
   // Add new favicon
   let link = document.querySelector("link[rel*='ICON']") || document.createElement('link');

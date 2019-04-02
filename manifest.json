@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "TERMINALFOUR utilities",
   "description": "This extension adds some much needed functionality to TERMINALFOUR",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "web_accessible_resources": [
     "img/*",
     "css/*",
